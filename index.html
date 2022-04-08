@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>ჯაჭვური რეაქცია</title>
+      <meta name="description" content="ჯაჭვური რეაქცია - თამაში">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <link rel="canonical" href="https://dshubitidze.github.io/jr-game/">
+      <meta property="og:url" content="https://dshubitidze.github.io/jr-game/">
+      <meta property="og:site_name" content="ჯაჭვური რეაქცია">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="ჯაჭვური რეაქცია - თამაში">
+      <meta property="og:image" content="https://dshubitidze.github.io/jr-game/square.png">
+      <script src="mootools-core-1.4.5.js"></script>
+      <script src="touch.js"></script>
+      <!--[if lt IE 9]><script src="excanvas.js"></script><![endif]-->
+      <script src="jr-gm-2.0.js"></script>
+      <script>
+         if(Browser.isMobile){
+         	document.addEvent('touchstart touchend', function(event){
+         		event.preventDefault();
+         	});
+         }
+         
+      </script>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   </head>
+   <body>
+      <h1>ჯაჭვური რეაქცია</h1>
+      <div id="container">
+         <canvas id="ballField"></canvas>
+         <div id="ballsExpanded"></div>
+         <div id="totalScore"></div>
+         <div id="levelScore"></div>
+         <div id="levelNumber"></div>
+         <div id="notifierBox">
+            <div id="notifierTitle">გამოიწვიე ჯაჭვური რეაქცია!</div>
+            <div id="notifierButton">დაწყება</div>
+         </div>
+      </div>
+      <div class="supported">
+         <p>ჯაჭვური რეაქციით აფეთქება, თამაში მარტივია, უბრალოდ დააწკაპეთ სასურველ ადგილას.</p>
+      </div>
+      <img src="pointerball.png" alt="Pointer" style="position:absolute; left: -1000px; top: 0px;"> 
+   </body>
+</html>
